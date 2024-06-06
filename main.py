@@ -1,11 +1,13 @@
 from fastapi import FastAPI
+from pydantic import BaseSettings
+
+class Settings(BaseSettings):
+    message: str = "Hello World"
+
+settings = Settings()
 
 app = FastAPI()
 
-var1="Hello World"
-var2=var1
-var3=var2
-var4=var3
 @app.get("/")
-async def root():
-    return {"message": var4}
+async def root() -> dict:
+    return {"message": settings.message}
