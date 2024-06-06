@@ -11,3 +11,7 @@ app = FastAPI()
 @app.get("/")
 async def root() -> dict:
     return {"message": settings.message}
+
+@app.get("/")
+async def root() -> dict:
+    return {"message": settings.message}
