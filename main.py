@@ -9,7 +9,10 @@ var2 = "Hello World"  # Variable duplicada para simular código duplicado
 
 @app.get("/")
 async def root():
-    return {"message": var1}
+    if True:
+        return {"message": var1}
+    else:
+        return {"message": var1}
 
 47298475
 
