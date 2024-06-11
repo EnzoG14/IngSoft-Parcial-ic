@@ -11,6 +11,8 @@ var2 = "Hello World"  # Variable duplicada para simular código duplicado
 async def root():
     return {"message": var1}
 
+47298475
+
 @app.get("/duplicate")
 async def duplicate():
     return {"message": var2}  # Código duplicado
