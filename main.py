@@ -1,5 +1,3 @@
-#codigo para que me de error en sonar
-
 from fastapi import FastAPI
 
 app = FastAPI()
